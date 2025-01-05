@@ -10,7 +10,13 @@ const saltRounds = 10;
 export async function POST(req: NextRequest) {
   try {
     console.log("hello");
-    const body = await req.json(); // Parsing the incoming request body
+    const body = await req.json().catch(() => null);
+    if (!body) {
+      return NextResponse.json(
+        { message: "Invalid JSON payload" },
+        { status: 400 }
+      );
+    } // Parsing the incoming request body
     const parsedData = registerSchema.parse(body); // Validate data using Zod schema
 
     // Hashing the password
