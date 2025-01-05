@@ -15,8 +15,9 @@ const SignUp = () => {
   });
 
   const onSubmit = async (data: z.infer<typeof registerSchema>) => {
-    console.log("onsubmit", data);
+    console.log("onsubmit");
     try {
+      // API call to login
       const result = await fetch("/api/register", {
         method: "POST",
         body: JSON.stringify(data),
@@ -33,7 +34,6 @@ const SignUp = () => {
       }
     } catch (err) {
       console.log("🚀 ~ onSubmit ~ err:", err);
-      toast.error("An error occurred. Please try again.");
     }
   };
 
@@ -57,21 +57,21 @@ const SignUp = () => {
             onSubmit={form.handleSubmit(onSubmit)}
           >
             <input
-              {...form.register("name")} // Register the "name" field
+              {...form.register("name")}
               type="text"
               placeholder="Username"
               required
               className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5ae3a7] transition-all"
             />
             <input
-              {...form.register("email")} // Register the "email" field
+              {...form.register("email")}
               type="email"
               placeholder="Email"
               required
               className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5ae3a7] transition-all"
             />
             <input
-              {...form.register("password")} // Register the "password" field
+              {...form.register("password")}
               type="password"
               placeholder="Password"
               required

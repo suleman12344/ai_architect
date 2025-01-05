@@ -39,6 +39,10 @@ export async function POST(req: NextRequest) {
   } catch (error: unknown) {
     console.error("Error in registration:", error);
 
+    if (error instanceof Error) {
+      console.error("Error message:", error.message);
+      console.error("Error stack:", error.stack);
+    }
     // Handle Zod validation errors
     if (error instanceof z.ZodError) {
       return NextResponse.json(
@@ -57,7 +61,10 @@ export async function POST(req: NextRequest) {
 
     // Handle unexpected errors
     return NextResponse.json(
-      { message: "Internal Server Error", error: (error as Error).message },
+      {
+        message: "Internal Server Errorrrrrrrrr",
+        error: (error as Error).message,
+      },
       { status: 500 }
     );
   }
