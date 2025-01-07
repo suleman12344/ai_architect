@@ -43,9 +43,9 @@ const Login = () => {
     }
   };
   return (
-    <div className="flex justify-between items-center p-9">
+    <div className="flex justify-between items-center sm:p-9">
       <motion.div
-        className="md:ml-36 ml-24 md:mt-0 mt-40 text-center space-y-4"
+        className="sm:ml-36 ml-1 sm:mt-0 mt-40 text-center space-y-4"
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}

@@ -41,7 +41,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex justify-between items-center p-9">
+    <div className="flex justify-between items-center sm:p-9">
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
@@ -56,7 +56,7 @@ const SignUp = () => {
         />
       </motion.div>
       <motion.div
-        className="text-center space-y-4 md:mr-40 mr-12 md:mt-0 mt-40"
+        className="text-center space-y-4 sm:mr-40  sm:mt-0 mt-40"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
