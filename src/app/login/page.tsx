@@ -1,12 +1,15 @@
 "use client";
 import { motion } from "motion/react";
-import Image from "next/image";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { loginSchema } from "@/lib/validation/schema";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
+import Link from "next/link";
+import Image from "next/image";
 const Login = () => {
   const router = useRouter();
   const form = useForm<z.infer<typeof loginSchema>>({
@@ -40,65 +43,55 @@ const Login = () => {
     }
   };
   return (
-    <div
-      className="flex items-center justify-center h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('/ai3.png')" }}
-    >
-      <div className="grid grid-cols-1 md:grid-cols-2 backdrop-blur-md bg-white bg-opacity-30 rounded-xl shadow-2xl ">
-        <motion.div
-          className="w-96 ml-14 mt-16"
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h2 className="text-3xl font-semibold text-[#5ae3a7] mb-8 text-center">
-            Log In
-          </h2>
-          <form
-            className="flex flex-col space-y-6"
-            onSubmit={form.handleSubmit(onSubmit)}
-          >
-            <input
-              {...form.register("email")}
-              type="email"
-              placeholder="Email"
-              required
-              className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5ae3a7] transition-all"
-            />
-            <input
-              {...form.register("password")}
-              type="password"
-              placeholder="Password"
-              required
-              className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5ae3a7] transition-all"
-            />
-            <button
-              type="submit"
-              className="bg-[#5ae3a7] p-3 rounded-lg shadow-md"
-            >
-              Log In
-            </button>
-            <div className="text-center mt-4">
-              <a href="/signup" className="text-[#5ae3a7] hover:underline">
-                Dont have an account? Sign Up
-              </a>
-            </div>
-          </form>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <Image
-            src="/3094352.jpg"
-            width="500"
-            height="100"
-            alt="image not found"
-            className="rounded-xl"
-          ></Image>
-        </motion.div>
-      </div>
+    <div className="flex justify-between items-center p-9">
+      <motion.div
+        className="ml-36 text-center space-y-4"
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <p className="text-3xl font-bold mb-12">Welcome back 👋</p>
+        <p>Please enter your details.</p>
+        <form className="space-y-4" onSubmit={form.handleSubmit(onSubmit)}>
+          <Input
+            {...form.register("email")}
+            placeholder="Email"
+            className="rounded-full"
+            required
+          ></Input>
+          <Input
+            {...form.register("password")}
+            placeholder="Password"
+            className="rounded-full"
+            required
+          ></Input>
+          <p className="text-end text-gray-400 font-extralight">
+            Forget password?
+          </p>
+          <Button className="w-96 rounded-3xl" type="submit">
+            Log in
+          </Button>
+          <p className="text-gray-400">
+            Don&apos;t have an account? &nbsp;
+            <Link href="/signup" className="font-medium text-black ">
+              Sign Up
+            </Link>
+          </p>
+        </form>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <Image
+          src="/ai4.jpg"
+          alt="image is not found"
+          width="700"
+          height="700"
+          className="rounded-3xl"
+        />
+      </motion.div>
     </div>
   );
 };

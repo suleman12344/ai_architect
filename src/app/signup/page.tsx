@@ -7,6 +7,9 @@ import { registerSchema } from "@/lib/validation/schema";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const SignUp = () => {
   const router = useRouter();
@@ -38,67 +41,66 @@ const SignUp = () => {
   };
 
   return (
-    <div
-      className="flex items-center justify-center h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('/ai3.png')" }}
-    >
-      <div className="grid grid-cols-1 md:grid-cols-2 backdrop-blur-md bg-white bg-opacity-10 rounded-xl shadow-2xl  gap-20">
-        <motion.div
-          className="w-96 ml-20 mt-16"
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h2 className="text-4xl font-bold text-[#5ae3a7] mb-8 text-center ">
-            Sign Up
-          </h2>
-          <form
-            className="flex flex-col space-y-6"
-            onSubmit={form.handleSubmit(onSubmit)}
-          >
-            <input
-              {...form.register("name")}
-              type="text"
-              placeholder="Username"
+    <div className="flex justify-between items-center p-9">
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <Image
+          src="/ai5.png"
+          alt="image is not found"
+          width="700"
+          height="700"
+          className="rounded-3xl"
+        />
+      </motion.div>
+      <motion.div
+        className="text-center space-y-4 mr-40"
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <p className="uppercase font-semibold">Start for free</p>
+        <p className="text-3xl font-bold mb-12">Create new account.</p>
+        <p className="font-extralight">
+          Already A Member?{" "}
+          <Link href="login" className="font-semibold">
+            Log In
+          </Link>
+        </p>
+        <form className="space-y-4" onSubmit={form.handleSubmit(onSubmit)}>
+          <div className="flex gap-2">
+            <Input
+              {...form.register("FirstName")}
+              placeholder="First name"
+              className="rounded-full"
               required
-              className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5ae3a7] transition-all"
-            />
-            <input
-              {...form.register("email")}
-              type="email"
-              placeholder="Email"
+            ></Input>
+            <Input
+              {...form.register("LastName")}
+              placeholder="last name"
+              className="rounded-full"
               required
-              className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5ae3a7] transition-all"
-            />
-            <input
-              {...form.register("password")}
-              type="password"
-              placeholder="Password"
-              required
-              className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5ae3a7] transition-all"
-            />
-            <button
-              type="submit"
-              className="bg-[#5ae3a7] text-white p-3 rounded-lg shadow-md "
-            >
-              Create Account
-            </button>
-          </form>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <Image
-            src="/4673526.jpg"
-            width="500"
-            height="100"
-            alt="image not found"
-            className="rounded-xl"
-          ></Image>
-        </motion.div>
-      </div>
+            ></Input>
+          </div>
+          <Input
+            {...form.register("email")}
+            placeholder="Email"
+            className="rounded-full"
+            required
+          ></Input>
+          <Input
+            {...form.register("password")}
+            placeholder="password"
+            className="rounded-full"
+            required
+          ></Input>
+          <Button className="w-96 rounded-3xl" type="submit">
+            Create account
+          </Button>
+        </form>
+      </motion.div>
     </div>
   );
 };
