@@ -52,11 +52,11 @@ const SignUp = () => {
           alt="image is not found"
           width="700"
           height="700"
-          className="rounded-3xl"
+          className="rounded-3xl hidden md:block"
         />
       </motion.div>
       <motion.div
-        className="text-center space-y-4 mr-40"
+        className="text-center space-y-4 md:mr-40 mr-12 md:mt-0 mt-40"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
