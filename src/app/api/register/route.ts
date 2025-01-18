@@ -1,8 +1,10 @@
+
 import { NextRequest, NextResponse } from "next/server";
 import * as z from "zod";
 import { registerSchema } from "@/lib/validation/schema"; // Ensure this is imported correctly
 import { db } from "@/db"; // Ensure your db connection is set up properly
 import { usersTable } from "@/db/schema/user"; // Correct path for your user schema
+
 import bcrypt from "bcrypt";
 
 const saltRounds = 10;

@@ -1,10 +1,14 @@
 //import Image from "next/image";
-import Link from "next/link";
+"use client";
+import Banar from "@/components/banner";
+import Home_details from "@/components/home_details";
+import React from "react";
+//simport Link from "next/link";
 export default function Home() {
   return (
-    <div>
-      <Link href="/signup">signup</Link>
-      <Link href="/login">login</Link>
+    <div className="relative ">
+      <Banar />
+      <Home_details />
     </div>
   );
 }
