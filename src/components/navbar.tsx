@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "./ui/button"; 
+import { Button } from "./ui/button";
 function Navbar() {
   const [menu, setMenu] = useState(false);
 
@@ -24,7 +24,7 @@ function Navbar() {
             Home
           </Link>
           <Link
-            href="/male"
+            href="/AboutUs"
             className="hover:text-white hover:bg-black rounded-full pt-3 pb-3 pl-5 pr-5"
           >
             About
@@ -71,28 +71,28 @@ function Navbar() {
             className="text-xl hover:text-gray-500"
             onClick={toggleMenu}
           >
-            Female
+            Home
           </Link>
           <Link
             href="/male"
             className="text-xl hover:text-gray-500"
             onClick={toggleMenu}
           >
-            Male
+            About Us
           </Link>
           <Link
             href="/"
             className="text-xl hover:text-gray-500"
             onClick={toggleMenu}
           >
-            Kids
+            FAQ&apos;s
           </Link>
           <Link
             href="/"
             className="text-xl hover:text-gray-500"
             onClick={toggleMenu}
           >
-            All Products
+            Get Started
           </Link>
           <div className="flex justify-center items-center gap-5">
             <Button className="bg-white text-black rounded-2xl hover:bg-black hover:text-white hover:shadow-2xl">
