@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
+import Link from "next/link";
 function home_details() {
   const cards = [
     {
@@ -51,30 +52,27 @@ function home_details() {
         <div className="flex-[1] flex flex-col justify-center lg:pr-10 space-y-2">
           <p className="text-sm text-gray-400">About Us</p>
           <p className="text-2xl font-bold">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry
+            We always try to make user vision into reality.
           </p>
           <p className="text-sm text-gray-400">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text
+            AI Architect empowers everyone to create stunning and
+            professional-looking home, landscape, and office floorplans and
+            designs
           </p>
           <div className="flex flex-wrap gap-8 pt-8">
             <div>
               <p className="text-2xl font-bold">255+</p>
-              <p className="text-sm text-gray-400">Lorem Ipsum</p>
+              <p className="text-sm text-gray-400">2d floor plan&apos;s</p>
               <p className="text-2xl font-bold">255+</p>
-              <p className="text-sm text-gray-400">Lorem Ipsum</p>
+              <p className="text-sm text-gray-400">house design&apos;s</p>
             </div>
             <div className="mb-10">
               <p className="text-2xl font-bold">255+</p>
-              <p className="text-sm text-gray-400">Lorem Ipsum</p>
-              <p className="text-2xl font-bold">255+</p>
-              <p className="text-sm text-gray-400">Lorem Ipsum</p>
+              <p className="text-sm text-gray-400">interior decor&apos;s</p>
             </div>
           </div>
           <Button className="bg-white text-black hover:text-black hover:bg-white">
-            Learn More
+            <Link href="/AboutUs">Learn More</Link>
           </Button>
         </div>
 
@@ -92,48 +90,64 @@ function home_details() {
         <div className="flex-[1] flex flex-col justify-center lg:pr-10 space-y-2">
           <p className="text-sm text-gray-400">How it Works</p>
           <p className="text-2xl font-bold">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry
-          </p>
-          <p className="text-sm text-gray-400">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text
+            Your Questions, Answered – Quickly and Clearly!
           </p>
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionTrigger>
+                Could You Help Me Design a Project?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Our Ai model can provide personalized design advice and help you
+                bring your vision to life. If you&apos;re interested in learning
+                more about our professional services, don&apos;t hesitate to
+                contact us for more information. Thank you for choosing
+                AI_Archiect, and please don&apos;t hesitate to reach out if you
+                have any questions or need further assistance. We&apos;re always
+                here to help.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionTrigger>
+                I can&apos;t log in to my account. What should I do?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                If you&apos;ve forgotten your password, don&apos;t worry! You
+                can easily restore it by following these simple steps:
+                <li>
+                  Enter the email address associated with your Ai Architect
+                  account.
+                </li>
+                <li>
+                  Wait for an email with your new password to arrive in your
+                  inbox. This may take up to 5 minutes. If you don&apos;t see
+                  it, please check your spam folder.
+                </li>
+                <li>Log in to your account with the new password provided.</li>
+                <li>Set a new password that you can easily remember.</li>
+                If you&apos;re having trouble restoring your password using
+                these steps, please don&apos;t hesitate to contact our Support
+                team for assistance. We&apos;re here to help you!
               </AccordionContent>
             </AccordionItem>
           </Accordion>
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionTrigger>
+                here can I find the language settings?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Since Ai Architect is available on five platforms worldwide, we
+                are constantly increasing the number of languages you can choose
+                for the app&apos;s interface.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-          <Accordion type="single" collapsible>
-            <AccordionItem value="item-1">
-              <AccordionTrigger>Is it accessible?</AccordionTrigger>
-              <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+
           <Button className="bg-white text-black hover:text-black hover:bg-white">
-            Get Started
+            <Link href="/FAQ">Get Started</Link>
           </Button>
         </div>
       </div>

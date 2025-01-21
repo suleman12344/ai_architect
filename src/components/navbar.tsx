@@ -30,13 +30,13 @@ function Navbar() {
             About
           </Link>
           <Link
-            href="/"
+            href="/FAQ"
             className="hover:text-white hover:bg-black rounded-full pt-3 pb-3 pl-5 pr-5"
           >
             FAQ&apos;s
           </Link>
           <Link
-            href="/"
+            href="/GetStarted"
             className="hover:text-white hover:bg-black rounded-full pt-3 pb-3 pl-5 pr-5"
           >
             Get Started
@@ -67,28 +67,28 @@ function Navbar() {
             />
           </button>
           <Link
-            href="/female"
+            href="/"
             className="text-xl hover:text-gray-500"
             onClick={toggleMenu}
           >
             Home
           </Link>
           <Link
-            href="/male"
+            href="/AboutUs"
             className="text-xl hover:text-gray-500"
             onClick={toggleMenu}
           >
             About Us
           </Link>
           <Link
-            href="/"
+            href="/FAQ"
             className="text-xl hover:text-gray-500"
             onClick={toggleMenu}
           >
             FAQ&apos;s
           </Link>
           <Link
-            href="/"
+            href="/GetStarted"
             className="text-xl hover:text-gray-500"
             onClick={toggleMenu}
           >
