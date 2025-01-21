@@ -19,7 +19,7 @@ function page() {
         "I am the Chief Executive Officer of AI Architect. we can make your dream house into reality",
       name: "Muhammad suleman",
       designation: "Chief Executive Officer of AI Architect",
-      src: "/suleman.jpg",
+      src: "/suleman.JPG",
     },
     {
       quote:
