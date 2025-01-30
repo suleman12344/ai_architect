@@ -1,4 +1,3 @@
-npx drizzle-kit push
 import React from "react";
 import { LayoutGrid } from "./ui/layout-grid";
 import {
