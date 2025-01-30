@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 //import { Button } from "./ui/button";
 import InteractiveHoverButton from "./ui/interactive-hover-button";
-import LinK from "next/link";
+//import LinK from "next/link";
 
 function Banner() {
   return (
@@ -24,9 +24,8 @@ function Banner() {
         <InteractiveHoverButton
           text="Generate🪄"
           className="w-[100%] text-black"
-        >
-          <LinK href="/GetStarted"></LinK>
-        </InteractiveHoverButton>
+          onClick={() => (window.location.href = "/GetStarted")}
+        ></InteractiveHoverButton>
       </div>
     </div>
   );
