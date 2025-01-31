@@ -96,6 +96,12 @@ const SignUp = () => {
             className="rounded-full"
             required
           ></Input>
+          <Input
+            {...form.register("fullname")}
+            placeholder="fullname"
+            className="rounded-full"
+            required
+          ></Input>
           <Button className="w-96 rounded-3xl" type="submit">
             Create account
           </Button>
