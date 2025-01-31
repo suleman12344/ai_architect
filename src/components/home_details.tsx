@@ -107,9 +107,7 @@ function home_details() {
                 here to help.
               </AccordionContent>
             </AccordionItem>
-          </Accordion>
-          <Accordion type="single" collapsible>
-            <AccordionItem value="item-1">
+            <AccordionItem value="item-2">
               <AccordionTrigger>
                 I can&apos;t log in to my account. What should I do?
               </AccordionTrigger>
@@ -132,9 +130,7 @@ function home_details() {
                 team for assistance. We&apos;re here to help you!
               </AccordionContent>
             </AccordionItem>
-          </Accordion>
-          <Accordion type="single" collapsible>
-            <AccordionItem value="item-1">
+            <AccordionItem value="item-3">
               <AccordionTrigger>
                 here can I find the language settings?
               </AccordionTrigger>
@@ -147,7 +143,7 @@ function home_details() {
           </Accordion>
 
           <Button className="bg-white text-black hover:text-black hover:bg-white">
-            <Link href="/FAQ">Get Started</Link>
+            <Link href="/FAQ">Learn more</Link>
           </Button>
         </div>
       </div>
