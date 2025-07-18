@@ -16,6 +16,21 @@
   Automatically produce detailed exterior and interior layouts after selecting a plan.
 
 ---
+🚀 Live Demo
+Explore AiArchitect step by step:
+
+Step	Preview
+Dashboard	Dashboard
+Signup	Signup
+Login	Login
+AboutUs	Homepage
+FAQs	Homepage
+Contact	Homepage
+GetsStarted	Homepage
+FloorPlan	Homepage
+Exterior Designs	Exterior
+3D on Exterior	3D Generation
+Interior Designs	Interior Designs
 
 ## 🛠 Tech Stack
 
