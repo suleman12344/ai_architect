@@ -43,3 +43,24 @@
 ```bash
 git clone https://github.com/suleman12344/ai_architect.git
 cd ai_architect
+
+# Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate        # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run migrations and start the backend server
+python manage.py migrate
+python manage.py runserver
+
+# Navigate to the frontend directory
+cd frontend
+
+# Install frontend dependencies
+npm install
+
+# Start the development server
+npm start
+
