@@ -64,6 +64,5 @@ npm install
 # Start the development server
 npm start
 
-![floorplan](https://github.com/user-attachments/assets/a3cbbe3a-12de-422c-acca-7d72075d9382)
 
 
