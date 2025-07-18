@@ -22,13 +22,12 @@ Explore AiArchitect step by step:
 
 | Step                      | Preview                                                |
 |---------------------------|--------------------------------------------------------|
-| Dashboard                 | ![Dashboard](demo/home.png)                        | 
+| Home                      | ![Dashboard](demo/home.png)                        | 
 | Signup                    | ![Signup](demo/signup.jpg)                             |
 | Login                     | ![Login](demo/login.jpg)                               |
-| AboutUs                   | ![Homepage](demo/about.jpg)                            |
+| AboutUs                   | ![Homepage](demo/aboutUs.png)                            |
 | FAQs                      | ![Homepage](demo/faqs.jpg)                             |
-| Contact                   | ![Homepage](demo/contect.jpg)                          |
-| GetsStarted               | ![Homepage](demo/getssstarted.png)                     |
+| Contact                   | ![Homepage](demo/contactus.png)                          |
 | FloorPlan                 | ![Homepage](demo/floorplan.jpg)                        |
 | Exterior Designs          | ![Exterior](demo/exterior.jpg)                         |
 | 3D on Exterior            | ![3D Generation](demo/3d.jpg)                          |
