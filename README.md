@@ -16,21 +16,25 @@
   Automatically produce detailed exterior and interior layouts after selecting a plan.
 
 ---
-🚀 Live Demo
+## 🚀 Live Demo
+
 Explore AiArchitect step by step:
 
-Step	Preview
-Dashboard	Dashboard
-Signup	Signup
-Login	Login
-AboutUs	Homepage
-FAQs	Homepage
-Contact	Homepage
-GetsStarted	Homepage
-FloorPlan	Homepage
-Exterior Designs	Exterior
-3D on Exterior	3D Generation
-Interior Designs	Interior Designs
+| Step                      | Preview                                                |
+|---------------------------|--------------------------------------------------------|
+| Dashboard                 | ![Dashboard](demo/home.png)                        | 
+| Signup                    | ![Signup](demo/signup.jpg)                             |
+| Login                     | ![Login](demo/login.jpg)                               |
+| AboutUs                   | ![Homepage](demo/about.jpg)                            |
+| FAQs                      | ![Homepage](demo/faqs.jpg)                             |
+| Contact                   | ![Homepage](demo/contect.jpg)                          |
+| GetsStarted               | ![Homepage](demo/getssstarted.png)                     |
+| FloorPlan                 | ![Homepage](demo/floorplan.jpg)                        |
+| Exterior Designs          | ![Exterior](demo/exterior.jpg)                         |
+| 3D on Exterior            | ![3D Generation](demo/3d.jpg)                          |
+| Interior Designs          | ![Interior Designs](demo/interior.jpg)                 |
+
+> **Note:** Screenshots are in the `demo/` folder. Replace these with your actual app screenshots for best presentation.
 
 ## 🛠 Tech Stack
 
