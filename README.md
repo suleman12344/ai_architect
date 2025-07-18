@@ -24,7 +24,7 @@ Explore AiArchitect step by step:
 |---------------------------|--------------------------------------------------------|
 | Home                      | ![Dashboard](demo/home.png)                        | 
 | Signup                    | ![Signup](demo/register.png)                             |
-| Login                     | ![Login](demo/logl.png)                               |
+| Login                     | ![Login](demo/logI.png)                               |
 | AboutUs                   | ![Homepage](demo/aboutUs.png)                            |
 | FAQs                      | ![Homepage](demo/faq's.png)                             |
 | Contact                   | ![Homepage](demo/contactus.png)                          |
