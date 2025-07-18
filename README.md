@@ -15,13 +15,11 @@ Python 3.x
 Django
 Django REST Framework
 Installation
-Clone the repository:
-
+Clone the repository
 bash
 git clone https://github.com/suleman12344/ai_architect.git
 cd ai_architect
-Backend Setup:
-
+Backend Setup
 Navigate to the backend directory (if separated).
 Create a virtual environment and activate it:
 bash
@@ -34,8 +32,7 @@ Run migrations and start the server:
 bash
 python manage.py migrate
 python manage.py runserver
-Frontend Setup:
-
+Frontend Setup
 Navigate to the frontend directory.
 Install dependencies:
 bash
@@ -56,4 +53,3 @@ This project is licensed under the MIT License.
 
 Contact
 For questions or suggestions, open an issue or contact suleman12344.
-
