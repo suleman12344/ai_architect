@@ -23,10 +23,10 @@ Explore AiArchitect step by step:
 | Step                      | Preview                                                |
 |---------------------------|--------------------------------------------------------|
 | Home                      | ![Dashboard](demo/home.png)                        | 
-| Signup                    | ![Signup](demo/signup.jpg)                             |
-| Login                     | ![Login](demo/login.jpg)                               |
+| Signup                    | ![Signup](demo/register.png)                             |
+| Login                     | ![Login](demo/logl.png)                               |
 | AboutUs                   | ![Homepage](demo/aboutUs.png)                            |
-| FAQs                      | ![Homepage](demo/faqs.jpg)                             |
+| FAQs                      | ![Homepage](demo/faq's.png)                             |
 | Contact                   | ![Homepage](demo/contactus.png)                          |
 | FloorPlan                 | ![Homepage](demo/floorplan.jpg)                        |
 | Exterior Designs          | ![Exterior](demo/exterior.jpg)                         |
